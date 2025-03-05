@@ -13,3 +13,12 @@ Usage
 Upload text files for training.
 Train the model using the provided script.
 Use predict() to classify new input text.
+Fine-Tuning BART for Text Summarization with Supervised Learning & Reinforcement Learning
+
+This project fine-tunes BART (facebook/bart-large) on the XSum dataset for abstractive text summarization. It includes:
+
+Supervised Fine-Tuning: Optimizes the model using ground truth summaries.
+Reinforcement Learning (REINFORCE): Uses ROUGE-1 scores as rewards to improve summaries.
+Evaluation: Computes ROUGE metrics to measure performance.
+🔹 Requirements: Python, PyTorch, Hugging Face Transformers, Datasets, Evaluate
+🔹 Usage: Train with supervised_fine_tune(), fine-tune with fine_tune_with_reinforce(), and evaluate with evaluate_model().
